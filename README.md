@@ -11,19 +11,19 @@ npm install -g @notebookllm/gitu-cli
 ### Windows One-Liner Install
 
 ```powershell
-irm https://raw.githubusercontent.com/cmgzone/gitucli/main/scripts/install-cli.ps1 | iex
+irm https://raw.githubusercontent.com/cmgzone/gitucli/HEAD/scripts/install-cli.ps1 | iex
 ```
 
 ### Cross-Platform PowerShell One-Liner
 
 ```bash
-pwsh -NoProfile -Command "irm https://raw.githubusercontent.com/cmgzone/gitucli/main/scripts/install-cli.ps1 | iex"
+pwsh -NoProfile -Command "irm https://raw.githubusercontent.com/cmgzone/gitucli/HEAD/scripts/install-cli.ps1 | iex"
 ```
 
 ### macOS / Linux One-Liner Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cmgzone/gitucli/main/scripts/install-cli.sh | bash
+curl -fsSL https://raw.githubusercontent.com/cmgzone/gitucli/HEAD/scripts/install-cli.sh | bash
 ```
 
 ### Install From GitHub Release
@@ -216,5 +216,5 @@ git push origin v1.2.3
 ```
 
 It uploads:
-- `gitu-cli-<version>.tgz` (installable with npm)
+- `notebookllm-gitu-cli-<version>.tgz` (installable with npm)
 - `SHA256SUMS.txt`

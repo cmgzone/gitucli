@@ -27,7 +27,7 @@ Option B (git subtree split):
 ## Release publishing
 
 - Push a tag like `v1.2.3` in the `cmgzone/gitucli` repo.
-- GitHub Actions builds and attaches a `gitu-cli-<version>.tgz` to the Release.
+- GitHub Actions builds and attaches a `notebookllm-gitu-cli-<version>.tgz` to the Release.
 
 Users can install directly:
 
