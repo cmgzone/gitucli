@@ -38,7 +38,7 @@ if (-not $release) {
   $npm = Get-Command npm -ErrorAction SilentlyContinue
   if ($npm) {
     Write-Host "Falling back to npm install (requires Node.js/npm)..." -ForegroundColor Yellow
-    & $npm.Source install -g "@notebookllm/gitu-cli"
+    & $npm.Source install -g "@cmgzone/gitu-cli"
     if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
     Write-Host "Installed via npm. Open a new terminal and run: gitu --help" -ForegroundColor Cyan
     exit 0
@@ -56,7 +56,7 @@ if (-not $asset) {
   $npm = Get-Command npm -ErrorAction SilentlyContinue
   if ($npm) {
     Write-Host "Falling back to npm install (requires Node.js/npm)..." -ForegroundColor Yellow
-    & $npm.Source install -g "@notebookllm/gitu-cli"
+    & $npm.Source install -g "@cmgzone/gitu-cli"
     if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
     Write-Host "Installed via npm. Open a new terminal and run: gitu --help" -ForegroundColor Cyan
     exit 0

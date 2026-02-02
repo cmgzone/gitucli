@@ -5,7 +5,7 @@ Command-line interface for **Gitu**, your Universal AI Assistant.
 ## Installation
 
 ```bash
-npm install -g @notebookllm/gitu-cli
+npm install -g @cmgzone/gitu-cli
 ```
 
 ### Windows One-Liner Install
@@ -28,10 +28,25 @@ curl -fsSL https://raw.githubusercontent.com/cmgzone/gitucli/HEAD/scripts/instal
 
 ### Install From GitHub Release
 
-If you publish `@notebookllm/gitu-cli` as a GitHub Release asset (`notebookllm-gitu-cli-<version>.tgz`), users can install it with:
+If you publish `@cmgzone/gitu-cli` as a GitHub Release asset (`cmgzone-gitu-cli-<version>.tgz`), users can install it with:
 
 ```bash
-npm install -g https://github.com/cmgzone/gitucli/releases/download/v1.2.3/notebookllm-gitu-cli-1.2.3.tgz
+npm install -g https://github.com/cmgzone/gitucli/releases/download/v1.2.3/cmgzone-gitu-cli-1.2.3.tgz
+```
+
+### Install From GitHub Packages (npm.pkg.github.com)
+
+Create or update your user `.npmrc`:
+
+```text
+@cmgzone:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
+```
+
+Then install:
+
+```bash
+npm install -g @cmgzone/gitu-cli
 ```
 
 ### Standalone Binaries (No Node.js required)
@@ -216,5 +231,5 @@ git push origin v1.2.3
 ```
 
 It uploads:
-- `notebookllm-gitu-cli-<version>.tgz` (installable with npm)
+- `cmgzone-gitu-cli-<version>.tgz` (installable with npm)
 - `SHA256SUMS.txt`

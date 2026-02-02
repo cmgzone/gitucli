@@ -31,7 +31,7 @@ if [ -z "$RELEASE_JSON" ]; then
   echo "No GitHub Release found yet for $REPO."
   if command -v npm >/dev/null 2>&1; then
     echo "Falling back to npm install (requires Node.js/npm)..."
-    npm install -g @notebookllm/gitu-cli
+    npm install -g @cmgzone/gitu-cli
     echo "Installed via npm. Open a new terminal and run: gitu --help"
     exit 0
   fi
@@ -46,7 +46,7 @@ if [ -z "$DOWNLOAD_URL" ]; then
   echo "No matching asset found for $ASSET_NAME"
   if command -v npm >/dev/null 2>&1; then
     echo "Falling back to npm install (requires Node.js/npm)..."
-    npm install -g @notebookllm/gitu-cli
+    npm install -g @cmgzone/gitu-cli
     echo "Installed via npm. Open a new terminal and run: gitu --help"
     exit 0
   fi
