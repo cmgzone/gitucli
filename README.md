@@ -8,12 +8,30 @@ Command-line interface for **Gitu**, your Universal AI Assistant.
 npm install -g @notebookllm/gitu-cli
 ```
 
-### Install From GitHub Release
+### Windows One-Liner Install
 
-If you publish `gitu-cli` as a GitHub Release asset (`gitu-cli-<version>.tgz`), users can install it with:
+```powershell
+irm https://raw.githubusercontent.com/cmgzone/gitucli/main/scripts/install-cli.ps1 | iex
+```
+
+### Cross-Platform PowerShell One-Liner
 
 ```bash
-npm install -g https://github.com/cmgzone/gitucli/releases/download/v1.2.3/gitu-cli-1.2.3.tgz
+pwsh -NoProfile -Command "irm https://raw.githubusercontent.com/cmgzone/gitucli/main/scripts/install-cli.ps1 | iex"
+```
+
+### macOS / Linux One-Liner Install
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/cmgzone/gitucli/main/scripts/install-cli.sh | bash
+```
+
+### Install From GitHub Release
+
+If you publish `@notebookllm/gitu-cli` as a GitHub Release asset (`notebookllm-gitu-cli-<version>.tgz`), users can install it with:
+
+```bash
+npm install -g https://github.com/cmgzone/gitucli/releases/download/v1.2.3/notebookllm-gitu-cli-1.2.3.tgz
 ```
 
 ### Standalone Binaries (No Node.js required)

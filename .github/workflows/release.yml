@@ -22,6 +22,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Derive version
         id: version
@@ -52,7 +53,7 @@ jobs:
       - name: Prepare release assets
         run: |
           mkdir -p dist-assets
-          mv gitu-cli-*.tgz dist-assets/
+          mv *.tgz dist-assets/
           mv dist-bin/* dist-assets/
           cp README.md dist-assets/README.md
           (cd dist-assets && sha256sum * > SHA256SUMS.txt)
@@ -66,3 +67,8 @@ jobs:
           files: |
             dist-assets/*
 
+      - name: Publish to npm
+        if: ${{ secrets.NPM_TOKEN != '' }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public

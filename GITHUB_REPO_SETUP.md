@@ -32,6 +32,5 @@ Option B (git subtree split):
 Users can install directly:
 
 ```bash
-npm install -g https://github.com/cmgzone/gitucli/releases/download/v1.2.3/gitu-cli-1.2.3.tgz
+npm install -g https://github.com/cmgzone/gitucli/releases/download/v1.2.3/notebookllm-gitu-cli-1.2.3.tgz
 ```
-
