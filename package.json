@@ -1,6 +1,6 @@
 {
   "name": "@cmgzone/gitu-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Command-line interface for Gitu Universal Assistant",
   "main": "dist/cli.js",
   "bin": {
